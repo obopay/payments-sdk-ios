@@ -10,7 +10,7 @@ import Foundation
 
 class JSON {
   
-  static func stringifyJSONObject(jsonObject: [String : Any], prettyPrinted: Bool = false) -> String {
+  static func toJSON(jsonObject: [String : Any], prettyPrinted: Bool = false) -> String {
     var options: JSONSerialization.WritingOptions = []
     if prettyPrinted { options     = JSONSerialization.WritingOptions.prettyPrinted }
     do {
@@ -22,18 +22,7 @@ class JSON {
     return ""
   }
   
-  static func stringifyJSONObjectArray(jsonObjectArray: [[String : Any]], prettyPrinted: Bool = false) -> String {
-    var jsonObjectString : [String] = []
-    for jsonObject in jsonObjectArray {
-      if (jsonObject.count != 0) {
-        jsonObjectString.append(stringifyJSONObject(jsonObject    : jsonObject,
-                                                    prettyPrinted  : prettyPrinted))
-      }
-    }
-    return "[\(jsonObjectString.joined(separator: ", "))]"
-  }
-  
-  static func objectifyJSONObjectString(jsonObjectString : String) -> [String : Any] {
+  static func fromJSON(jsonObjectString : String) -> [String : Any] {
     let data = jsonObjectString.data(using: String.Encoding.utf8, allowLossyConversion: false)!
     do {
       return try JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]

@@ -13,7 +13,6 @@
 		4981C90A22C0A445001344B6 /* OboPayments.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 4981C90922C0A444001344B6 /* OboPayments.podspec */; };
 		4981C90C22C0A5E7001344B6 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 4981C90B22C0A5E7001344B6 /* LICENSE */; };
 		4981C91622C0B204001344B6 /* json.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4981C91522C0B204001344B6 /* json.swift */; };
-		4981C91822C0B241001344B6 /* object.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4981C91722C0B241001344B6 /* object.swift */; };
 		499D624522C2234F001AEA00 /* Obopayments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499D624422C2234F001AEA00 /* Obopayments.swift */; };
 		49A8517D22CB5706002CDED8 /* url.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A8517C22CB5706002CDED8 /* url.swift */; };
 /* End PBXBuildFile section */
@@ -38,7 +37,6 @@
 		4981C90922C0A444001344B6 /* OboPayments.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OboPayments.podspec; sourceTree = "<group>"; };
 		4981C90B22C0A5E7001344B6 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		4981C91522C0B204001344B6 /* json.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = json.swift; sourceTree = "<group>"; };
-		4981C91722C0B241001344B6 /* object.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = object.swift; sourceTree = "<group>"; };
 		499D624422C2234F001AEA00 /* Obopayments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Obopayments.swift; sourceTree = "<group>"; };
 		49A8517C22CB5706002CDED8 /* url.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = url.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,7 +87,6 @@
 				4981C8F322C0A38E001344B6 /* Info.plist */,
 				4981C91522C0B204001344B6 /* json.swift */,
 				49A8517C22CB5706002CDED8 /* url.swift */,
-				4981C91722C0B241001344B6 /* object.swift */,
 				499D624422C2234F001AEA00 /* Obopayments.swift */,
 			);
 			path = obopaypayments;
@@ -215,7 +212,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4981C91822C0B241001344B6 /* object.swift in Sources */,
 				499D624522C2234F001AEA00 /* Obopayments.swift in Sources */,
 				4981C91622C0B204001344B6 /* json.swift in Sources */,
 				49A8517D22CB5706002CDED8 /* url.swift in Sources */,
