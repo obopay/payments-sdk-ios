@@ -1,0 +1,11 @@
+framework module obopaypayments {
+  umbrella header "obopaypayments.h"
+
+  export *
+  module * { export * }
+}
+
+module obopaypayments.Swift {
+    header "obopaypayments-Swift.h"
+    requires objc
+}
