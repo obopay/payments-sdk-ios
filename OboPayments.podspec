@@ -27,7 +27,6 @@ Pod::Spec.new do |s|
   s.source_files        = "ObopayPayments.framework/Headers/*.{h}"
   s.vendored_frameworks = "ObopayPayments.framework"
   s.preserve_paths      = "ObopayPayments.framework/*"
-  s.xcconfig            =  { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/"' }
   s.framework           = 'Foundation'
 
 end
