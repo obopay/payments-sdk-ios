@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name           = "OboPayments"
-  s.version        = "0.1.4"
+  s.version        = "0.1.5"
   s.summary        = "Obopay suite of SDKs."
   s.description    = "Obopay payments iOS SDK provides seamless integration to business iOS app to offer Obopay payment services to it’s customers."
   s.homepage       = "https://www.obopay.com"
@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
   s.platform       = :ios, "10.0"
   s.source         = {
     :git => "https://github.com/obopay/payments-sdk-ios.git",
-    :tag => "0.1.4"
+    :tag => "0.1.5"
   }
   s.source_files        = "ObopayPayments.framework/Headers/*.{h}"
   s.vendored_frameworks = "ObopayPayments.framework"
