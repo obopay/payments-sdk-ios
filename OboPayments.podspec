@@ -24,9 +24,10 @@ Pod::Spec.new do |s|
     :git => "https://github.com/obopay/payments-sdk-ios.git",
     :tag => "0.1.4"
   }
-  s.source_files        = "ObopayPayments.framework/Headers/*.h"
-  s.public_header_files = "ObopayPayments.framework/Headers/*.h"
+  s.source_files        = "ObopayPayments.framework/Headers/*.{h}"
   s.vendored_frameworks = "ObopayPayments.framework"
+  s.preserve_paths      = "ObopayPayments.framework/*"
+  s.xcconfig            =  { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/obopay/"' }
   s.framework           = 'Foundation'
 
 end
